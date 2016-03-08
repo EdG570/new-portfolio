@@ -51,7 +51,7 @@
       height: em(500px);
       transform: translate(-300px, 0);
       transition: transform 0.3s ease;
-      background-color: $lightgreen;
+      background-color: $darkgreen;
       z-index: 999;
       padding-top: 3em;
       @media screen and(min-width: 775px) {
@@ -82,6 +82,10 @@
           letter-spacing: 2px;
         }
       }
+
+      ul > li:last-child {
+        border-bottom: none;
+      }
     }
 
     .nav-open {
@@ -108,7 +112,6 @@
       font-family: $sans;
       font-weight: 200;
     }
-
   }
 
   #header-content {
@@ -135,19 +138,21 @@
       margin: 0 0 2em 0;
     }
 
-    #contact-btn {
-      font-family: $sans;
-      color: #fff;
-      font-size: 1.2em;
-      font-weight: 200;
-      padding: 0.5em 3em;
-      border: 1px solid $lightgreen;
-    }
-
-    #contact-btn:hover {
+    .contact-btn:hover {
       background-color: $lightgreen;
       transition: 1s ease;
     }
+  }
+
+  .transition {
+    width: em(100px);
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 9.2em;
+    @media screen and (min-width: 775px) {
+      top: 13.3em;
+    } 
   }
 }
 

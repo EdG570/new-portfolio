@@ -1,0 +1,17 @@
+#about-section {
+  background: linear-gradient(to top, $gradient, $gradient),url('../../img/about-me-background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 7em 0 7em 3em;
+  height: em(600px);
+
+  #about-content {
+    width: em(600px);
+
+    h2 {
+      font-size: 2em;
+    }
+  }
+}

@@ -385,9 +385,20 @@ li {
 .container {
   width: 100%;
   margin: 0 auto; }
+  @media screen and (min-width: 1250px) {
+    .container {
+      width: 78.125em; } }
 
 a {
   text-decoration: none; }
+
+.contact-btn {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 200;
+  padding: 0.75em 4em;
+  border: 1px solid #50E3C2; }
 
 /* ----- HEADER SECTION -----*/
 #header-section {
@@ -435,7 +446,7 @@ a {
       height: 31.25em;
       transform: translate(-300px, 0);
       transition: transform 0.3s ease;
-      background-color: #50E3C2;
+      background-color: #229077;
       z-index: 999;
       padding-top: 3em; }
       @media screen and (min-width: 775px) {
@@ -460,6 +471,8 @@ a {
           font-size: 1.5em;
           font-weight: 200;
           letter-spacing: 2px; }
+      #header-section .nav-section nav ul > li:last-child {
+        border-bottom: none; }
     #header-section .nav-section .nav-open {
       transform: translate(0, 0); }
       @media screen and (min-width: 775px) {
@@ -496,13 +509,66 @@ a {
       font-weight: 200;
       font-size: 1.5em;
       margin: 0 0 2em 0; }
-    #header-section #header-content #contact-btn {
-      font-family: "Open Sans", sans-serif;
-      color: #fff;
-      font-size: 1.2em;
-      font-weight: 200;
-      padding: 0.5em 3em;
-      border: 1px solid #50E3C2; }
-    #header-section #header-content #contact-btn:hover {
+    #header-section #header-content .contact-btn:hover {
       background-color: #50E3C2;
       transition: 1s ease; }
+  #header-section .transition {
+    width: 6.25em;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 9.2em; }
+    @media screen and (min-width: 775px) {
+      #header-section .transition {
+        top: 13.3em; } }
+
+#portfolio-section {
+  padding: 3.125em 0 4.375em 0; }
+  #portfolio-section h2 {
+    text-align: center;
+    color: #333;
+    font-weight: 300; }
+  #portfolio-section #portfolio-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+    @media screen and (min-width: 750px) {
+      #portfolio-section #portfolio-box #yoda, #portfolio-section #portfolio-box #halloween {
+        width: 50%; } }
+    @media screen and (min-width: 1125px) {
+      #portfolio-section #portfolio-box #yoda, #portfolio-section #portfolio-box #halloween, #portfolio-section #portfolio-box #snackshack {
+        width: 33.3333%; } }
+    #portfolio-section #portfolio-box .portfolio-content-box {
+      text-align: center;
+      width: 100%; }
+      #portfolio-section #portfolio-box .portfolio-content-box img {
+        display: block;
+        margin: 0 auto;
+        width: 23.4375em; }
+      #portfolio-section #portfolio-box .portfolio-content-box h3 {
+        color: #229077;
+        margin-bottom: 0; }
+      #portfolio-section #portfolio-box .portfolio-content-box p {
+        color: #ccc;
+        margin-top: 0.5em; }
+  #portfolio-section #btn-box {
+    width: 17.3125em;
+    margin: 0 auto;
+    margin-top: 3em; }
+    #portfolio-section #btn-box #portfolio-btn {
+      background-color: #50E3C2;
+      padding: 0.75em 5em;
+      text-align: center; }
+
+#about-section {
+  background: linear-gradient(to top, rgba(24, 104, 105, 0.45), rgba(24, 104, 105, 0.45)), url("../../img/about-me-background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 7em 0 7em 3em;
+  height: 37.5em; }
+  #about-section #about-content {
+    width: 37.5em; }
+    #about-section #about-content h2 {
+      font-size: 2em; }

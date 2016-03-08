@@ -36,9 +36,21 @@ li {
 .container {
   width: 100%;
   margin: 0 auto;
+  @media screen and (min-width: 1250px) {
+    width: em(1250px);
+  }
 }
 
 a {
   text-decoration: none;
+}
+
+.contact-btn {
+  font-family: $sans;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 200;
+  padding: 0.75em 4em;
+  border: 1px solid $lightgreen;
 }
 
