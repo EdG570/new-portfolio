@@ -1,0 +1,21 @@
+* {
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+img, embed, object, video {
+  max-width: 100%;
+}
+
+nav, a, button {
+  min-height: 48px;
+}
+
+h1, h2, h3, h4 {
+  font-family: $merriweather;
+}
+
+span, p {
+  font-family: $sans;
+}
+
