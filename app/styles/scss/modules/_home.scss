@@ -1,0 +1,153 @@
+/* ----- HEADER SECTION -----*/
+
+#header-section {
+  background: linear-gradient(to top, $gradient, $gradient),url('../../img/hero-background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5em 0;
+  height: em(500px);
+  @media screen and(min-width: 775px) {
+      padding: 0;
+      height: em(600px);
+  }
+
+  .hamburger {
+    width: 3em;
+    padding: 0.5em;
+    position: absolute;
+    right: 1em;
+    bottom: 6em;
+    @media screen and(min-width: 775px) {
+      bottom: 2em;
+    }
+    @media screen and(min-width: 950px) {
+      display: none;
+    }
+  }
+
+  #logo {
+    width: 4em;
+    margin-top: 3em;
+    display: block;
+    margin: 0 auto;
+    @media screen and(min-width: 775px) {
+      display: inline-block;
+    }
+  }
+
+  .nav-section {
+    width: 100%;
+    position: relative;
+    @media screen and(min-width: 775px) {
+      padding: 0.5em 2em;
+    }
+
+    nav {
+      width: 300px;
+      position: absolute;
+      bottom: -21.9em;
+      height: em(500px);
+      transform: translate(-300px, 0);
+      transition: transform 0.3s ease;
+      background-color: $lightgreen;
+      z-index: 999;
+      padding-top: 3em;
+      @media screen and(min-width: 775px) {
+        transform: translate(-335px, 0);
+        bottom: -31.8em;
+        height: em(600px);
+      }
+      @media screen and(min-width: 950px) {
+        display: none;
+      }
+
+      .hidden-nav {
+        width: 10em;
+        margin: 0 auto;
+      }
+
+      ul > li {
+        display: block;
+        margin: 0 auto 1em 0;
+        text-align: center;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 1em;
+
+        a {
+          color: #fff;
+          font-size: 1.5em;
+          font-weight: 200;
+          letter-spacing: 2px;
+        }
+      }
+    }
+
+    .nav-open {
+      transform: translate(0, 0);
+      @media screen and(min-width: 775px) {
+        transform: translate(-33px, 0);
+      }
+    }
+  }
+
+  #nav-links {
+    display: none;
+    @media screen and(min-width: 951px) {
+      display: inline-block;
+      float: right;
+    }
+
+    li {
+      margin-right: 1.5em;
+    }
+
+    a {
+      color: #fff;
+      font-family: $sans;
+      font-weight: 200;
+    }
+
+  }
+
+  #header-content {
+    color: #fff;
+    text-align: center;
+    @media screen and(min-width: 775px) {
+      margin-top: 7em;
+    }
+
+    h1 {
+      font-weight: 400;
+      font-size: 2.5em;
+      position: relative;
+      margin-bottom: 0;
+      @media screen and(min-width: 775px) {
+        font-size: 3em;
+      }
+    }
+
+    h3 {
+      font-family: $sans;
+      font-weight: 200;
+      font-size: 1.5em;
+      margin: 0 0 2em 0;
+    }
+
+    #contact-btn {
+      font-family: $sans;
+      color: #fff;
+      font-size: 1.2em;
+      font-weight: 200;
+      padding: 0.5em 3em;
+      border: 1px solid $lightgreen;
+    }
+
+    #contact-btn:hover {
+      background-color: $lightgreen;
+      transition: 1s ease;
+    }
+  }
+}
+
