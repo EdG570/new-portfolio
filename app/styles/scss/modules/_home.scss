@@ -13,6 +13,7 @@
       height: em(600px);
   }
 
+
   .hamburger {
     width: 3em;
     padding: 0.5em;
@@ -111,6 +112,11 @@
       color: #fff;
       font-family: $sans;
       font-weight: 200;
+      padding: 0.85em 0;
+    }
+
+    li > a:hover {
+      border-bottom: 2px solid #lightgreen;
     }
   }
 
@@ -126,8 +132,12 @@
       font-size: 2.5em;
       position: relative;
       margin-bottom: 0;
-      @media screen and(min-width: 775px) {
+      @media screen and (min-width: 775px) {
         font-size: 3em;
+      }
+      @media screen and (min-width: 950px) {
+        font-size: 4em;
+        font-weight: 200
       }
     }
 
@@ -152,6 +162,9 @@
     top: 9.2em;
     @media screen and (min-width: 775px) {
       top: 13.3em;
+    } 
+    @media screen and (min-width: 950px) {
+      top: 12em;
     } 
   }
 }
@@ -283,9 +296,9 @@
   background-position: center;
   background-repeat: no-repeat;
   padding: 3em 0.5em;
-  height: em(900px);
-  @media screen and (min-width: 551px) {
-    height: 700px;
+  height: em(700px);
+  @media screen and (min-width: 533px) and (max-width: 750px) {
+    height: em(500px);
   }
   
   #icons-wrapper {
@@ -299,7 +312,7 @@
     color: #333;
     font-weight: 300;
     font-size: 2em;
-    margin-bottom: 0;
+    margin-bottom: 1em;
   }
 
   .icon-box {
@@ -312,10 +325,13 @@
 
     img {
       width: em(125px);
-      @media screen and (min-width: 400px) {
+      @media screen and (max-width: 551px) {
+        width: 125px;
+      }
+      @media screen and (min-width: 735px) {
         width: em(175px);
       }
-       @media screen and (min-width: 910px) {
+       @media screen and (min-width: 935px) {
         width: em(225px);
       }
     }
