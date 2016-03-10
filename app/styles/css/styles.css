@@ -668,3 +668,123 @@ footer {
   footer p {
     text-align: center;
     color: #ccc; }
+
+.port-nav-section {
+  width: 100%;
+  background-color: #516E64;
+  clear: both;
+  padding: 1em 1em 1em 0;
+  position: relative; }
+  @media screen and (min-width: 46.875em) {
+    .port-nav-section {
+      padding: 1em; } }
+  .port-nav-section .nav-hamburger {
+    width: 2em;
+    position: absolute;
+    right: 1em; }
+    @media screen and (min-width: 46.875em) {
+      .port-nav-section .nav-hamburger {
+        right: 2em; } }
+    @media screen and (min-width: 59.4375em) {
+      .port-nav-section .nav-hamburger {
+        display: none; } }
+  .port-nav-section .port-logo {
+    width: 4em; }
+  .port-nav-section .port-nav-links {
+    display: none; }
+    @media screen and (min-width: 951px) {
+      .port-nav-section .port-nav-links {
+        display: inline-block;
+        float: right;
+        position: relative;
+        bottom: 4.3em; } }
+    .port-nav-section .port-nav-links li {
+      margin-right: 1.5em; }
+    .port-nav-section .port-nav-links a {
+      color: #fff;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 200;
+      padding: 0.85em 0; }
+    .port-nav-section .port-nav-links li > a:hover {
+      border-bottom: 2px solid #lightgreen; }
+  .port-nav-section .port-nav nav {
+    width: 300px;
+    position: absolute;
+    top: 0;
+    height: 31.25em;
+    transform: translate(-300px, 0);
+    transition: transform 0.3s ease;
+    background-color: #229077;
+    z-index: 999;
+    padding-top: 3em; }
+    @media screen and (min-width: 775px) {
+      .port-nav-section .port-nav nav {
+        transform: translate(-335px, 0);
+        bottom: -31.8em;
+        height: 37.5em; } }
+    @media screen and (min-width: 950px) {
+      .port-nav-section .port-nav nav {
+        display: none; } }
+    .port-nav-section .port-nav nav .port-hidden-nav {
+      width: 10em;
+      margin: 0 auto; }
+    .port-nav-section .port-nav nav ul > li {
+      display: block;
+      margin: 0 auto 1em 0;
+      text-align: center;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 1em; }
+      .port-nav-section .port-nav nav ul > li a {
+        color: #fff;
+        font-size: 1.5em;
+        font-weight: 200;
+        letter-spacing: 2px; }
+    .port-nav-section .port-nav nav ul > li:last-child {
+      border-bottom: none; }
+  .port-nav-section .port-nav .nav-open {
+    transform: translate(0, 0); }
+    @media screen and (min-width: 775px) {
+      .port-nav-section .port-nav .nav-open {
+        transform: translate(-33px, 0); } }
+  .port-nav-section .port-nav .logo-box {
+    text-align: center; }
+    @media screen and (min-width: 46.875em) {
+      .port-nav-section .port-nav .logo-box {
+        width: 50%;
+        text-align: left; } }
+    .port-nav-section .port-nav .logo-box h2 {
+      color: #fff;
+      font-weight: 200;
+      margin: 0;
+      margin-top: 0.25em; }
+      @media screen and (min-width: 46.875em) {
+        .port-nav-section .port-nav .logo-box h2 {
+          display: inline-block;
+          position: relative;
+          bottom: 1.05em;
+          left: 0.4em; } }
+
+/*---------------------PORTFOLIO SECTION--------------------*/
+#portfolio-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+  #portfolio-box .port-flex {
+    width: 100%;
+    text-align: center; }
+    @media screen and (min-width: 46.875em) {
+      #portfolio-box .port-flex {
+        width: 50%; } }
+    @media screen and (min-width: 62.5em) {
+      #portfolio-box .port-flex {
+        width: 33%; } }
+    #portfolio-box .port-flex img {
+      display: block;
+      margin: 0 auto;
+      width: 23.4375em; }
+    #portfolio-box .port-flex h3 {
+      color: #229077;
+      margin-bottom: 0; }
+    #portfolio-box .port-flex p {
+      color: #ccc;
+      margin-top: 0.5em; }
