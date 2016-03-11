@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 249.2 249.2" enable-background="new 0 0 249.2 249.2" xml:space="preserve">
-<g id="Layer_2">
-</g>
-<g id="Layer_3">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="6.1 146.1 300 300" enable-background="new 6.1 146.1 300 300" xml:space="preserve">
+<g>
 	<g>
 		
-			<rect x="36.5" y="36.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -51.6129 124.6046)" fill="#50E3C2" width="176.2" height="176.2"/>
+			<rect x="50.1" y="190" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 475.9021 395.0646)" fill="#CC6699" width="212.1" height="212.1"/>
 		
-			<rect x="70.4" y="70.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -51.6129 124.6046)" fill="#FFFFFF" width="108.3" height="108.3"/>
+			<rect x="90.9" y="230.9" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 475.7568 395.1248)" fill="#FFFFFF" width="130.4" height="130.4"/>
 	</g>
-	<text transform="matrix(1 0 0 1 91.8651 133.1044)" fill="#333333" font-family="'Merriweather'" font-size="30">Sass</text>
+	
+		<rect x="70.8" y="210.8" transform="matrix(0.7071 0.7071 -0.7071 0.7071 255.1003 -23.6768)" opacity="0.51" fill="none" stroke="#E8E6E6" stroke-width="5" stroke-miterlimit="10" width="170.6" height="170.6"/>
 </g>
+<text transform="matrix(1 0 0 1 116.7175 306.3275)" fill="#333333" font-family="'Merriweather'" font-size="36.1156">Sass</text>
 </svg>

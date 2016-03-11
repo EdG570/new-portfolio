@@ -2,7 +2,7 @@
   width: 100%;
   background-color: #516E64;
   clear: both;
-  padding: 1em 1em 1em 0;
+  padding: 0.5em 1em 0.5em 0;
   position: relative;
   @media screen and (min-width: em(750px)) {
       padding: 1em;
@@ -127,7 +127,7 @@
 
 /*---------------------PORTFOLIO SECTION--------------------*/
 
-#portfolio-box {
+.portfolio-box {
   width: 100%;
   display: flex;
   flex-wrap: wrap;

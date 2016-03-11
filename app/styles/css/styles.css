@@ -539,29 +539,6 @@ a {
     text-align: center;
     color: #333;
     font-weight: 300; }
-  #portfolio-section #portfolio-box {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap; }
-    @media screen and (min-width: 750px) {
-      #portfolio-section #portfolio-box #yoda, #portfolio-section #portfolio-box #halloween {
-        width: 50%; } }
-    @media screen and (min-width: 1125px) {
-      #portfolio-section #portfolio-box #yoda, #portfolio-section #portfolio-box #halloween, #portfolio-section #portfolio-box #snackshack {
-        width: 33.3333%; } }
-    #portfolio-section #portfolio-box .portfolio-content-box {
-      text-align: center;
-      width: 100%; }
-      #portfolio-section #portfolio-box .portfolio-content-box img {
-        display: block;
-        margin: 0 auto;
-        width: 23.4375em; }
-      #portfolio-section #portfolio-box .portfolio-content-box h3 {
-        color: #229077;
-        margin-bottom: 0; }
-      #portfolio-section #portfolio-box .portfolio-content-box p {
-        color: #ccc;
-        margin-top: 0.5em; }
   #portfolio-section #btn-box {
     width: 17.3125em;
     margin: 0 auto;
@@ -673,7 +650,7 @@ footer {
   width: 100%;
   background-color: #516E64;
   clear: both;
-  padding: 1em 1em 1em 0;
+  padding: 0.5em 1em 0.5em 0;
   position: relative; }
   @media screen and (min-width: 46.875em) {
     .port-nav-section {
@@ -765,26 +742,69 @@ footer {
           left: 0.4em; } }
 
 /*---------------------PORTFOLIO SECTION--------------------*/
-#portfolio-box {
+.portfolio-box {
   width: 100%;
   display: flex;
   flex-wrap: wrap; }
-  #portfolio-box .port-flex {
+  .portfolio-box .port-flex {
     width: 100%;
     text-align: center; }
     @media screen and (min-width: 46.875em) {
-      #portfolio-box .port-flex {
+      .portfolio-box .port-flex {
         width: 50%; } }
     @media screen and (min-width: 62.5em) {
-      #portfolio-box .port-flex {
+      .portfolio-box .port-flex {
         width: 33%; } }
-    #portfolio-box .port-flex img {
+    .portfolio-box .port-flex img {
       display: block;
       margin: 0 auto;
       width: 23.4375em; }
-    #portfolio-box .port-flex h3 {
+    .portfolio-box .port-flex h3 {
       color: #229077;
       margin-bottom: 0; }
-    #portfolio-box .port-flex p {
+    .portfolio-box .port-flex p {
       color: #ccc;
       margin-top: 0.5em; }
+
+#blog-section {
+  padding: 3em 0; }
+  #blog-section .blog-container {
+    width: 42.5em;
+    margin: 0 auto; }
+    @media screen and (max-width: 750px) {
+      #blog-section .blog-container {
+        width: 90%; } }
+    #blog-section .blog-container article {
+      width: 100%;
+      padding: 3em 0 6em 0;
+      border-bottom: 1px solid #ccc; }
+      #blog-section .blog-container article h1 {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 0;
+        padding-bottom: 0.5em;
+        color: #333; }
+        @media screen and (max-width: 500px) {
+          #blog-section .blog-container article h1 {
+            font-size: 1.5em; } }
+      #blog-section .blog-container article .date {
+        margin-top: 0.5em;
+        color: #aaa; }
+      #blog-section .blog-container article img {
+        margin-top: 1em; }
+      #blog-section .blog-container article p {
+        line-height: 1.8;
+        font-weight: 200; }
+      #blog-section .blog-container article .blog-content {
+        margin-top: 2em; }
+      #blog-section .blog-container article .hidden-content {
+        display: none; }
+      #blog-section .blog-container article .btn {
+        padding: 0.5em 2em;
+        background-color: #50E3C2;
+        color: #fff;
+        position: relative;
+        top: 1em; }
+    #blog-section .blog-container article:last-child {
+      border-bottom: none; }
+    #blog-section .blog-container article:first-child {
+      padding-top: 0; }

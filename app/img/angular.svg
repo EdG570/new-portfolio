@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 250.6 250.6" enable-background="new 0 0 250.6 250.6" xml:space="preserve">
-<g id="Layer_2">
-</g>
-<g id="Layer_3">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="8 146.1 300 300" enable-background="new 8 146.1 300 300" xml:space="preserve">
+<g>
 	<g>
 		
-			<rect x="37.2" y="37.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -51.9058 125.3117)" fill="#50E3C2" width="176.2" height="176.2"/>
+			<rect x="52.3" y="190" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 479.6987 393.4927)" fill="#DD1914" width="212.1" height="212.1"/>
 		
-			<rect x="71.1" y="71.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -51.9058 125.3117)" fill="#FFFFFF" width="108.3" height="108.3"/>
+			<rect x="93.1" y="230.9" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 479.5534 393.5529)" fill="#FFFFFF" width="130.4" height="130.4"/>
 	</g>
-	<text transform="matrix(1 0 0 1 65.6192 133.8115)" fill="#333333" font-family="'Merriweather'" font-size="30">Angular</text>
+	
+		<rect x="73.1" y="210.8" transform="matrix(0.7071 0.7071 -0.7071 0.7071 255.7519 -25.2492)" opacity="0.51" fill="none" stroke="#E8E6E6" stroke-width="5" stroke-miterlimit="10" width="170.6" height="170.6"/>
 </g>
+<text transform="matrix(1 0 0 1 86.4937 306.3272)" fill="#333333" font-family="'Merriweather'" font-size="36.1156">Angular</text>
 </svg>
