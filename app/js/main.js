@@ -16,9 +16,11 @@ $(document).ready(function() {
     $(this).parent().siblings().hide();
     $(this).hide();
     $(this).siblings('.back').show();
+  });     
+
+  $('#js').velocity({
+    
   });
-
-
 
 });
 

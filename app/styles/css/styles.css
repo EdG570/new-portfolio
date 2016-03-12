@@ -402,10 +402,10 @@ a {
 
 /* ----- HEADER SECTION -----*/
 #header-section {
-  background: linear-gradient(to top, rgba(24, 104, 105, 0.45), rgba(24, 104, 105, 0.45)), url("../../img/hero-background.jpg");
+  background: linear-gradient(to top, rgba(24, 104, 105, 0.8), rgba(24, 104, 105, 0.8)), url("../../img/skydive.jpg");
   background-attachment: fixed;
   background-size: cover;
-  background-position: center;
+  background-position: cover;
   background-repeat: no-repeat;
   padding: 5em 0;
   height: 31.25em; }
@@ -444,13 +444,17 @@ a {
       position: absolute;
       bottom: -21.9em;
       height: 31.25em;
+      -webkit-transform: translate(-300px, 0);
       transform: translate(-300px, 0);
+      transition: -webkit-transform 0.3s ease;
       transition: transform 0.3s ease;
+      transition: transform 0.3s ease, -webkit-transform 0.3s ease;
       background-color: #229077;
       z-index: 999;
       padding-top: 3em; }
       @media screen and (min-width: 775px) {
         #header-section .nav-section nav {
+          -webkit-transform: translate(-335px, 0);
           transform: translate(-335px, 0);
           bottom: -31.8em;
           height: 37.5em; } }
@@ -474,9 +478,11 @@ a {
       #header-section .nav-section nav ul > li:last-child {
         border-bottom: none; }
     #header-section .nav-section .nav-open {
+      -webkit-transform: translate(0, 0);
       transform: translate(0, 0); }
       @media screen and (min-width: 775px) {
         #header-section .nav-section .nav-open {
+          -webkit-transform: translate(-33px, 0);
           transform: translate(-33px, 0); } }
   #header-section #nav-links {
     display: none; }
@@ -550,7 +556,7 @@ a {
 
 /* ----------------------ABOUT ME SECTION------------------------*/
 #about-section {
-  background: linear-gradient(to top, rgba(24, 104, 105, 0.45), rgba(24, 104, 105, 0.45)), url("../../img/about-me-background.jpg");
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../img/about-bg2.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -602,7 +608,11 @@ a {
     #skills-section {
       height: 31.25em; } }
   #skills-section #icons-wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%; }
   #skills-section h2 {
@@ -765,6 +775,53 @@ footer {
     .portfolio-box .port-flex p {
       color: #ccc;
       margin-top: 0.5em; }
+
+#about-header {
+  width: 100%;
+  background: linear-gradient(to bottom, #b1d0c5, white);
+  padding: 2em 0; }
+
+#ed-img {
+  width: 12em;
+  display: block;
+  margin: 0 auto; }
+  @media screen and (min-width: 950px) {
+    #ed-img {
+      margin: 0 auto;
+      margin-top: 2em; } }
+
+.about-container {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  @media screen and (min-width: 1050px) {
+    .about-container {
+      width: 1050px;
+      margin: 0 auto; } }
+
+#about-page-section {
+  padding: 2em 1em; }
+  @media screen and (min-width: 1050px) {
+    #about-page-section {
+      padding: 1em 0 4em 0; } }
+  @media screen and (min-width: 550px) {
+    #about-page-section .about-content {
+      width: 31.25em;
+      margin: 0 auto; } }
+  @media screen and (min-width: 1050px) {
+    #about-page-section .about-content {
+      width: 45%;
+      margin: 0 auto;
+      display: inline-block; } }
+  #about-page-section .about-content h2 {
+    color: #229077; }
+  #about-page-section .about-content p {
+    font-weight: 200;
+    line-height: 1.5em; }
 
 #blog-section {
   padding: 3em 0; }

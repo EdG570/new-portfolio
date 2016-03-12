@@ -1,10 +1,10 @@
 /* ----- HEADER SECTION -----*/
 
 #header-section {
-  background: linear-gradient(to top, $gradient, $gradient),url('../../img/hero-background.jpg');
+  background: linear-gradient(to top, $gradient, $gradient), url('../../img/skydive.jpg');       
   background-attachment: fixed;
   background-size: cover;
-  background-position: center;
+  background-position: cover;
   background-repeat: no-repeat;
   padding: 5em 0;
   height: em(500px);
@@ -50,13 +50,17 @@
       position: absolute;
       bottom: -21.9em;
       height: em(500px);
-      transform: translate(-300px, 0);
+      -webkit-transform: translate(-300px, 0);
+              transform: translate(-300px, 0);
+      transition: -webkit-transform 0.3s ease;
       transition: transform 0.3s ease;
+      transition: transform 0.3s ease, -webkit-transform 0.3s ease;
       background-color: $darkgreen;
       z-index: 999;
       padding-top: 3em;
       @media screen and(min-width: 775px) {
-        transform: translate(-335px, 0);
+        -webkit-transform: translate(-335px, 0);
+                transform: translate(-335px, 0);
         bottom: -31.8em;
         height: em(600px);
       }
@@ -90,9 +94,11 @@
     }
 
     .nav-open {
-      transform: translate(0, 0);
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
       @media screen and(min-width: 775px) {
-        transform: translate(-33px, 0);
+        -webkit-transform: translate(-33px, 0);
+                transform: translate(-33px, 0);
       }
     }
   }
@@ -195,7 +201,7 @@
 /* ----------------------ABOUT ME SECTION------------------------*/
 
 #about-section {
-  background: linear-gradient(to top, $gradient, $gradient),url('../../img/about-me-background.jpg');
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../img/about-bg2.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -263,8 +269,12 @@
   }
   
   #icons-wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     width: 100%;
   }
 
