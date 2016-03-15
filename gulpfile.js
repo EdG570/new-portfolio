@@ -24,7 +24,7 @@ gulp.task('copy-html', function(){
 gulp.task('sass', function() {
   return gulp.src('app/styles/scss/**/*.scss')
     .pipe(sass())
-    .pipe(gulp.dest('app/styles/css'))
+    .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({
       stream: true
   }))
