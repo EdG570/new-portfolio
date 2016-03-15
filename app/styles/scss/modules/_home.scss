@@ -1,7 +1,8 @@
 /* ----- HEADER SECTION -----*/
 
 #header-section {
-  background: linear-gradient(to top, $gradient, $gradient), url('../../img/skydive.jpg');       
+  /*background: linear-gradient(to top, $gradient, $gradient), url('../../img/skydive.jpg');  */     
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../img/skydive-texture.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: cover;
@@ -10,9 +11,8 @@
   height: em(500px);
   @media screen and(min-width: 775px) {
       padding: 0;
-      height: em(600px);
+      height: em(700px);
   }
-
 
   .hamburger {
     width: 3em;
@@ -55,7 +55,7 @@
       transition: -webkit-transform 0.3s ease;
       transition: transform 0.3s ease;
       transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-      background-color: $darkgreen;
+      background-color: #32b8bc;
       z-index: 999;
       padding-top: 3em;
       @media screen and(min-width: 775px) {
@@ -101,7 +101,8 @@
                 transform: translate(-33px, 0);
       }
     }
-  }
+
+}
 
   #nav-links {
     display: none;
@@ -130,7 +131,7 @@
     color: #fff;
     text-align: center;
     @media screen and(min-width: 775px) {
-      margin-top: 7em;
+      margin-top: 9em;
     }
 
     h1 {
@@ -160,18 +161,9 @@
     }
   }
 
-  .transition {
-    width: em(100px);
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    top: 9.2em;
-    @media screen and (min-width: 775px) {
-      top: 13.3em;
-    } 
-    @media screen and (min-width: 950px) {
-      top: 12em;
-    } 
+  #nav-links > li > a:hover {
+    color: $lightgreen;
+    transition: 0.5s ease;
   }
 }
 
@@ -190,10 +182,104 @@
     width: em(277px);
     margin: 0 auto;
     margin-top: 3em;
+
     #portfolio-btn {
       background-color: $lightgreen;
       padding: 0.75em 5em;
       text-align: center;
+    }
+
+    #portfolio-btn:hover {
+      background-color: #4ed8b8;
+    }
+
+  }
+
+  #yoda-detail, #snack-detail, #quiz-detail, 
+  #countries-detail, #band-detail, #flick-detail,
+  #wait-detail, #abg-detail, #flappy-detail,
+  #portraits-detail, #grocery-detail, #hot-detail {
+    width: 100%;
+    background: url('../../img/detail-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2em;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 0%;
+    opacity: 0;
+    position: relative;
+    @media screen and (min-width: 1050px) {
+      width: em(1150px);
+      margin: 0 auto;
+      margin-bottom: 2em;
+      margin-top: 2em;
+      padding: 3em 0em 3em 3em;
+    }
+
+    .cancel {
+      width: 2em;
+      position: absolute;
+      right: 1em;
+      top: 1em;
+      @media screen and (max-width: 715px) {
+        width: 1.5em;
+        top: 0.5em;
+        right: 0.5em;
+      }
+    }
+
+    .detail-text, .detail-img {
+      margin: 0 auto;
+      opacity: 0;
+      @media screen and (min-width: 850px) {
+        width: 50%;
+      }
+    }
+
+    .detail-img img {
+      border-radius: 5px;
+      border: 1px solid #fff;
+    }
+
+    .detail-text {
+      @media screen and (min-width: 850px) {
+        padding-left: 5em;
+      }
+    }
+
+    p {
+      color: #fff;
+      font-weight: 200;
+      line-height: 1.7;
+      @media screen and (min-width: 510px) {
+        width: em(500px);
+      }
+      @media screen and (min-width: 850px) {
+        width: em(400px);
+      }
+    }
+
+    span {
+      position: absolute;
+      color: #eee;
+      right: 1em;
+      top: 0.5em;
+    }
+    
+    a {
+      background-color: $lightgreen;
+      color: #fff;
+      padding: 0.75em 3em 0.5em 3em;
+      width: em(170px);
+      display: block;
+      margin: 0 auto;
+      @media screen and (min-width: 850px) {
+        margin: 0;
+        margin-top: 1em;
+      }
     }
   }
 }
@@ -201,7 +287,7 @@
 /* ----------------------ABOUT ME SECTION------------------------*/
 
 #about-section {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../img/about-bg2.jpg');
+  background: linear-gradient(to top, $gradient, $gradient), url('../../img/header-background.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -212,6 +298,7 @@
   #about-content {
     width: 90%;
     margin: 0 auto;
+    text-align: center;
     /*width: em(600px);*/
 
     h2 {
@@ -229,6 +316,7 @@
       margin-bottom: 2em;
       @media screen and (min-width: 530px) {
         width: em(375px);
+        margin: 0 auto;
       }
     }
 
@@ -255,65 +343,11 @@
   }
 }
 
-/*---------------------SKILLS SECTION------------------------*/
-
-#skills-section {
-  background-color: #fff;
-  background-image: url('../../img/skills-background.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 3em 0.5em;
-  height: em(700px);
-  @media screen and (min-width: 533px) and (max-width: 750px) {
-    height: em(500px);
-  }
-  
-  #icons-wrapper {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    width: 100%;
-  }
-
-  h2 {
-    text-align: center;
-    color: #333;
-    font-weight: 300;
-    font-size: 2em;
-    margin-bottom: 1em;
-  }
-
-  .icon-box {
-    width: 100%;
-    text-align: center;
-    @media screen and (min-width: 950px) {
-      width: em(950px);
-      margin: 0 auto;
-    }
-
-    img {
-      width: em(125px);
-      @media screen and (max-width: 551px) {
-        width: 125px;
-      }
-      @media screen and (min-width: 735px) {
-        width: em(175px);
-      }
-       @media screen and (min-width: 935px) {
-        width: em(225px);
-      }
-    }
-  }
-}
-
 /*----------------------FOOTER SECTION-------------------*/
 
 footer {
   height: em(150px);
-  background-color: #333;
+  background-color: #222;
   padding-top: 2em;
 
   ul {

@@ -402,7 +402,8 @@ a {
 
 /* ----- HEADER SECTION -----*/
 #header-section {
-  background: linear-gradient(to top, rgba(24, 104, 105, 0.8), rgba(24, 104, 105, 0.8)), url("../../img/skydive.jpg");
+  /*background: linear-gradient(to top, $gradient, $gradient), url('../../img/skydive.jpg');  */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/skydive-texture.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: cover;
@@ -412,7 +413,7 @@ a {
   @media screen and (min-width: 775px) {
     #header-section {
       padding: 0;
-      height: 37.5em; } }
+      height: 43.75em; } }
   #header-section .hamburger {
     width: 3em;
     padding: 0.5em;
@@ -449,7 +450,7 @@ a {
       transition: -webkit-transform 0.3s ease;
       transition: transform 0.3s ease;
       transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-      background-color: #229077;
+      background-color: #32b8bc;
       z-index: 999;
       padding-top: 3em; }
       @media screen and (min-width: 775px) {
@@ -504,7 +505,7 @@ a {
     text-align: center; }
     @media screen and (min-width: 775px) {
       #header-section #header-content {
-        margin-top: 7em; } }
+        margin-top: 9em; } }
     #header-section #header-content h1 {
       font-weight: 400;
       font-size: 2.5em;
@@ -525,18 +526,9 @@ a {
     #header-section #header-content .contact-btn:hover {
       background-color: #50E3C2;
       transition: 1s ease; }
-  #header-section .transition {
-    width: 6.25em;
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    top: 9.2em; }
-    @media screen and (min-width: 775px) {
-      #header-section .transition {
-        top: 13.3em; } }
-    @media screen and (min-width: 950px) {
-      #header-section .transition {
-        top: 12em; } }
+  #header-section #nav-links > li > a:hover {
+    color: #50E3C2;
+    transition: 0.5s ease; }
 
 /* -------------PORTFOLIO SECTION----------------- */
 #portfolio-section {
@@ -553,10 +545,128 @@ a {
       background-color: #50E3C2;
       padding: 0.75em 5em;
       text-align: center; }
+    #portfolio-section #btn-box #portfolio-btn:hover {
+      background-color: #4ed8b8; }
+  #portfolio-section #yoda-detail, #portfolio-section #snack-detail, #portfolio-section #quiz-detail,
+  #portfolio-section #countries-detail, #portfolio-section #band-detail, #portfolio-section #flick-detail,
+  #portfolio-section #wait-detail, #portfolio-section #abg-detail, #portfolio-section #flappy-detail,
+  #portfolio-section #portraits-detail, #portfolio-section #grocery-detail, #portfolio-section #hot-detail {
+    width: 100%;
+    background: url("../../img/detail-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2em;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 0%;
+    opacity: 0;
+    position: relative; }
+    @media screen and (min-width: 1050px) {
+      #portfolio-section #yoda-detail, #portfolio-section #snack-detail, #portfolio-section #quiz-detail,
+      #portfolio-section #countries-detail, #portfolio-section #band-detail, #portfolio-section #flick-detail,
+      #portfolio-section #wait-detail, #portfolio-section #abg-detail, #portfolio-section #flappy-detail,
+      #portfolio-section #portraits-detail, #portfolio-section #grocery-detail, #portfolio-section #hot-detail {
+        width: 71.875em;
+        margin: 0 auto;
+        margin-bottom: 2em;
+        margin-top: 2em;
+        padding: 3em 0em 3em 3em; } }
+    #portfolio-section #yoda-detail .cancel, #portfolio-section #snack-detail .cancel, #portfolio-section #quiz-detail .cancel,
+    #portfolio-section #countries-detail .cancel, #portfolio-section #band-detail .cancel, #portfolio-section #flick-detail .cancel,
+    #portfolio-section #wait-detail .cancel, #portfolio-section #abg-detail .cancel, #portfolio-section #flappy-detail .cancel,
+    #portfolio-section #portraits-detail .cancel, #portfolio-section #grocery-detail .cancel, #portfolio-section #hot-detail .cancel {
+      width: 2em;
+      position: absolute;
+      right: 1em;
+      top: 1em; }
+      @media screen and (max-width: 715px) {
+        #portfolio-section #yoda-detail .cancel, #portfolio-section #snack-detail .cancel, #portfolio-section #quiz-detail .cancel,
+        #portfolio-section #countries-detail .cancel, #portfolio-section #band-detail .cancel, #portfolio-section #flick-detail .cancel,
+        #portfolio-section #wait-detail .cancel, #portfolio-section #abg-detail .cancel, #portfolio-section #flappy-detail .cancel,
+        #portfolio-section #portraits-detail .cancel, #portfolio-section #grocery-detail .cancel, #portfolio-section #hot-detail .cancel {
+          width: 1.5em;
+          top: 0.5em;
+          right: 0.5em; } }
+    #portfolio-section #yoda-detail .detail-text, #portfolio-section #yoda-detail .detail-img, #portfolio-section #snack-detail .detail-text, #portfolio-section #snack-detail .detail-img, #portfolio-section #quiz-detail .detail-text, #portfolio-section #quiz-detail .detail-img,
+    #portfolio-section #countries-detail .detail-text,
+    #portfolio-section #countries-detail .detail-img, #portfolio-section #band-detail .detail-text, #portfolio-section #band-detail .detail-img, #portfolio-section #flick-detail .detail-text, #portfolio-section #flick-detail .detail-img,
+    #portfolio-section #wait-detail .detail-text,
+    #portfolio-section #wait-detail .detail-img, #portfolio-section #abg-detail .detail-text, #portfolio-section #abg-detail .detail-img, #portfolio-section #flappy-detail .detail-text, #portfolio-section #flappy-detail .detail-img,
+    #portfolio-section #portraits-detail .detail-text,
+    #portfolio-section #portraits-detail .detail-img, #portfolio-section #grocery-detail .detail-text, #portfolio-section #grocery-detail .detail-img, #portfolio-section #hot-detail .detail-text, #portfolio-section #hot-detail .detail-img {
+      margin: 0 auto;
+      opacity: 0; }
+      @media screen and (min-width: 850px) {
+        #portfolio-section #yoda-detail .detail-text, #portfolio-section #yoda-detail .detail-img, #portfolio-section #snack-detail .detail-text, #portfolio-section #snack-detail .detail-img, #portfolio-section #quiz-detail .detail-text, #portfolio-section #quiz-detail .detail-img,
+        #portfolio-section #countries-detail .detail-text,
+        #portfolio-section #countries-detail .detail-img, #portfolio-section #band-detail .detail-text, #portfolio-section #band-detail .detail-img, #portfolio-section #flick-detail .detail-text, #portfolio-section #flick-detail .detail-img,
+        #portfolio-section #wait-detail .detail-text,
+        #portfolio-section #wait-detail .detail-img, #portfolio-section #abg-detail .detail-text, #portfolio-section #abg-detail .detail-img, #portfolio-section #flappy-detail .detail-text, #portfolio-section #flappy-detail .detail-img,
+        #portfolio-section #portraits-detail .detail-text,
+        #portfolio-section #portraits-detail .detail-img, #portfolio-section #grocery-detail .detail-text, #portfolio-section #grocery-detail .detail-img, #portfolio-section #hot-detail .detail-text, #portfolio-section #hot-detail .detail-img {
+          width: 50%; } }
+    #portfolio-section #yoda-detail .detail-img img, #portfolio-section #snack-detail .detail-img img, #portfolio-section #quiz-detail .detail-img img,
+    #portfolio-section #countries-detail .detail-img img, #portfolio-section #band-detail .detail-img img, #portfolio-section #flick-detail .detail-img img,
+    #portfolio-section #wait-detail .detail-img img, #portfolio-section #abg-detail .detail-img img, #portfolio-section #flappy-detail .detail-img img,
+    #portfolio-section #portraits-detail .detail-img img, #portfolio-section #grocery-detail .detail-img img, #portfolio-section #hot-detail .detail-img img {
+      border-radius: 5px;
+      border: 1px solid #fff; }
+    @media screen and (min-width: 850px) {
+      #portfolio-section #yoda-detail .detail-text, #portfolio-section #snack-detail .detail-text, #portfolio-section #quiz-detail .detail-text,
+      #portfolio-section #countries-detail .detail-text, #portfolio-section #band-detail .detail-text, #portfolio-section #flick-detail .detail-text,
+      #portfolio-section #wait-detail .detail-text, #portfolio-section #abg-detail .detail-text, #portfolio-section #flappy-detail .detail-text,
+      #portfolio-section #portraits-detail .detail-text, #portfolio-section #grocery-detail .detail-text, #portfolio-section #hot-detail .detail-text {
+        padding-left: 5em; } }
+    #portfolio-section #yoda-detail p, #portfolio-section #snack-detail p, #portfolio-section #quiz-detail p,
+    #portfolio-section #countries-detail p, #portfolio-section #band-detail p, #portfolio-section #flick-detail p,
+    #portfolio-section #wait-detail p, #portfolio-section #abg-detail p, #portfolio-section #flappy-detail p,
+    #portfolio-section #portraits-detail p, #portfolio-section #grocery-detail p, #portfolio-section #hot-detail p {
+      color: #fff;
+      font-weight: 200;
+      line-height: 1.7; }
+      @media screen and (min-width: 510px) {
+        #portfolio-section #yoda-detail p, #portfolio-section #snack-detail p, #portfolio-section #quiz-detail p,
+        #portfolio-section #countries-detail p, #portfolio-section #band-detail p, #portfolio-section #flick-detail p,
+        #portfolio-section #wait-detail p, #portfolio-section #abg-detail p, #portfolio-section #flappy-detail p,
+        #portfolio-section #portraits-detail p, #portfolio-section #grocery-detail p, #portfolio-section #hot-detail p {
+          width: 31.25em; } }
+      @media screen and (min-width: 850px) {
+        #portfolio-section #yoda-detail p, #portfolio-section #snack-detail p, #portfolio-section #quiz-detail p,
+        #portfolio-section #countries-detail p, #portfolio-section #band-detail p, #portfolio-section #flick-detail p,
+        #portfolio-section #wait-detail p, #portfolio-section #abg-detail p, #portfolio-section #flappy-detail p,
+        #portfolio-section #portraits-detail p, #portfolio-section #grocery-detail p, #portfolio-section #hot-detail p {
+          width: 25em; } }
+    #portfolio-section #yoda-detail span, #portfolio-section #snack-detail span, #portfolio-section #quiz-detail span,
+    #portfolio-section #countries-detail span, #portfolio-section #band-detail span, #portfolio-section #flick-detail span,
+    #portfolio-section #wait-detail span, #portfolio-section #abg-detail span, #portfolio-section #flappy-detail span,
+    #portfolio-section #portraits-detail span, #portfolio-section #grocery-detail span, #portfolio-section #hot-detail span {
+      position: absolute;
+      color: #eee;
+      right: 1em;
+      top: 0.5em; }
+    #portfolio-section #yoda-detail a, #portfolio-section #snack-detail a, #portfolio-section #quiz-detail a,
+    #portfolio-section #countries-detail a, #portfolio-section #band-detail a, #portfolio-section #flick-detail a,
+    #portfolio-section #wait-detail a, #portfolio-section #abg-detail a, #portfolio-section #flappy-detail a,
+    #portfolio-section #portraits-detail a, #portfolio-section #grocery-detail a, #portfolio-section #hot-detail a {
+      background-color: #50E3C2;
+      color: #fff;
+      padding: 0.75em 3em 0.5em 3em;
+      width: 10.625em;
+      display: block;
+      margin: 0 auto; }
+      @media screen and (min-width: 850px) {
+        #portfolio-section #yoda-detail a, #portfolio-section #snack-detail a, #portfolio-section #quiz-detail a,
+        #portfolio-section #countries-detail a, #portfolio-section #band-detail a, #portfolio-section #flick-detail a,
+        #portfolio-section #wait-detail a, #portfolio-section #abg-detail a, #portfolio-section #flappy-detail a,
+        #portfolio-section #portraits-detail a, #portfolio-section #grocery-detail a, #portfolio-section #hot-detail a {
+          margin: 0;
+          margin-top: 1em; } }
 
 /* ----------------------ABOUT ME SECTION------------------------*/
 #about-section {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../img/about-bg2.jpg");
+  background: linear-gradient(to top, rgba(24, 104, 105, 0.95), rgba(24, 104, 105, 0.95)), url("../../img/header-background.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -566,6 +676,7 @@ a {
   #about-section #about-content {
     width: 90%;
     margin: 0 auto;
+    text-align: center;
     /*width: em(600px);*/ }
     #about-section #about-content h2 {
       font-size: 2em;
@@ -580,7 +691,8 @@ a {
       margin-bottom: 2em; }
       @media screen and (min-width: 530px) {
         #about-section #about-content h3 {
-          width: 23.4375em; } }
+          width: 23.4375em;
+          margin: 0 auto; } }
     #about-section #about-content #about-btn {
       padding: 0.75em 3em; }
   #about-section #about-transition {
@@ -596,54 +708,10 @@ a {
       #about-section #about-transition {
         top: 14.35em; } }
 
-/*---------------------SKILLS SECTION------------------------*/
-#skills-section {
-  background-color: #fff;
-  background-image: url("../../img/skills-background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 3em 0.5em;
-  height: 43.75em; }
-  @media screen and (min-width: 533px) and (max-width: 750px) {
-    #skills-section {
-      height: 31.25em; } }
-  #skills-section #icons-wrapper {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    width: 100%; }
-  #skills-section h2 {
-    text-align: center;
-    color: #333;
-    font-weight: 300;
-    font-size: 2em;
-    margin-bottom: 1em; }
-  #skills-section .icon-box {
-    width: 100%;
-    text-align: center; }
-    @media screen and (min-width: 950px) {
-      #skills-section .icon-box {
-        width: 59.375em;
-        margin: 0 auto; } }
-    #skills-section .icon-box img {
-      width: 7.8125em; }
-      @media screen and (max-width: 551px) {
-        #skills-section .icon-box img {
-          width: 125px; } }
-      @media screen and (min-width: 735px) {
-        #skills-section .icon-box img {
-          width: 10.9375em; } }
-      @media screen and (min-width: 935px) {
-        #skills-section .icon-box img {
-          width: 14.0625em; } }
-
 /*----------------------FOOTER SECTION-------------------*/
 footer {
   height: 9.375em;
-  background-color: #333;
+  background-color: #222;
   padding-top: 2em; }
   footer ul {
     width: 9em;
@@ -658,7 +726,7 @@ footer {
 
 .port-nav-section {
   width: 100%;
-  background-color: #516E64;
+  background-color: #374B4E;
   clear: both;
   padding: 0.5em 1em 0.5em 0;
   position: relative; }
@@ -699,13 +767,17 @@ footer {
     position: absolute;
     top: 0;
     height: 31.25em;
+    -webkit-transform: translate(-300px, 0);
     transform: translate(-300px, 0);
+    transition: -webkit-transform 0.3s ease;
     transition: transform 0.3s ease;
-    background-color: #229077;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+    background-color: #32b8bc;
     z-index: 999;
     padding-top: 3em; }
     @media screen and (min-width: 775px) {
       .port-nav-section .port-nav nav {
+        -webkit-transform: translate(-335px, 0);
         transform: translate(-335px, 0);
         bottom: -31.8em;
         height: 37.5em; } }
@@ -729,9 +801,11 @@ footer {
     .port-nav-section .port-nav nav ul > li:last-child {
       border-bottom: none; }
   .port-nav-section .port-nav .nav-open {
+    -webkit-transform: translate(0, 0);
     transform: translate(0, 0); }
     @media screen and (min-width: 775px) {
       .port-nav-section .port-nav .nav-open {
+        -webkit-transform: translate(-33px, 0);
         transform: translate(-33px, 0); } }
   .port-nav-section .port-nav .logo-box {
     text-align: center; }
@@ -754,7 +828,11 @@ footer {
 /*---------------------PORTFOLIO SECTION--------------------*/
 .portfolio-box {
   width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
   .portfolio-box .port-flex {
     width: 100%;
@@ -768,7 +846,8 @@ footer {
     .portfolio-box .port-flex img {
       display: block;
       margin: 0 auto;
-      width: 23.4375em; }
+      width: 23.4375em;
+      cursor: pointer; }
     .portfolio-box .port-flex h3 {
       color: #229077;
       margin-bottom: 0; }
@@ -777,18 +856,17 @@ footer {
       margin-top: 0.5em; }
 
 #about-header {
-  width: 100%;
-  background: linear-gradient(to bottom, #b1d0c5, white);
-  padding: 2em 0; }
+  width: 100%; }
 
 #ed-img {
   width: 12em;
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 2em; }
   @media screen and (min-width: 950px) {
     #ed-img {
       margin: 0 auto;
-      margin-top: 2em; } }
+      margin-top: 2.4em; } }
 
 .about-container {
   width: 100%;
@@ -800,7 +878,7 @@ footer {
   flex-wrap: wrap; }
   @media screen and (min-width: 1050px) {
     .about-container {
-      width: 1050px;
+      width: 1150px;
       margin: 0 auto; } }
 
 #about-page-section {
@@ -814,8 +892,7 @@ footer {
       margin: 0 auto; } }
   @media screen and (min-width: 1050px) {
     #about-page-section .about-content {
-      width: 45%;
-      margin: 0 auto;
+      width: 40%;
       display: inline-block; } }
   #about-page-section .about-content h2 {
     color: #229077; }

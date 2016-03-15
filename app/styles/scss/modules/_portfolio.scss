@@ -1,6 +1,6 @@
 .port-nav-section {
   width: 100%;
-  background-color: #516E64;
+  background-color: #374B4E;
   clear: both;
   padding: 0.5em 1em 0.5em 0;
   position: relative;
@@ -56,13 +56,17 @@
       position: absolute;
       top: 0;
       height: em(500px);
-      transform: translate(-300px, 0);
+      -webkit-transform: translate(-300px, 0);
+              transform: translate(-300px, 0);
+      transition: -webkit-transform 0.3s ease;
       transition: transform 0.3s ease;
-      background-color: $darkgreen;
+      transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+      background-color: #32b8bc;
       z-index: 999;
       padding-top: 3em;
       @media screen and(min-width: 775px) {
-        transform: translate(-335px, 0);
+        -webkit-transform: translate(-335px, 0);
+                transform: translate(-335px, 0);
         bottom: -31.8em;
         height: em(600px);
       }
@@ -96,9 +100,11 @@
     }
 
     .nav-open {
-      transform: translate(0, 0);
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
       @media screen and(min-width: 775px) {
-        transform: translate(-33px, 0);
+        -webkit-transform: translate(-33px, 0);
+                transform: translate(-33px, 0);
       }
     }
 
@@ -129,8 +135,12 @@
 
 .portfolio-box {
   width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 
   .port-flex {
     width: 100%;
@@ -146,6 +156,7 @@
         display: block;
         margin: 0 auto;
         width: em(375px);
+        cursor: pointer;
       }
 
       h3 {
