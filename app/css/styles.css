@@ -359,6 +359,9 @@ th {
   box-sizing: border-box;
   letter-spacing: 1px; }
 
+*:focus {
+  outline: none; }
+
 html, body {
   width: 100%;
   height: 100%; }
@@ -402,7 +405,7 @@ a {
 
 /* ----- HEADER SECTION -----*/
 #header-section {
-  /*background: linear-gradient(to top, $gradient, $gradient), url('../../img/skydive.jpg');  */
+  /*background: linear-gradient(to top, $gradient, $gradient), url('../img/skydive.jpg');  */
   background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/skydive-texture.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -668,50 +671,6 @@ a {
           margin: 0;
           margin-top: 1em; } }
 
-/* ----------------------ABOUT ME SECTION------------------------*/
-#about-section {
-  background: linear-gradient(to top, rgba(24, 104, 105, 0.95), rgba(24, 104, 105, 0.95)), url("../../img/header-background.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 5em 0.5em;
-  height: 37.5em; }
-  #about-section #about-content {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    /*width: em(600px);*/ }
-    #about-section #about-content h2 {
-      font-size: 2em;
-      color: #50E3C2;
-      margin-bottom: 0; }
-    #about-section #about-content h3 {
-      width: 100%;
-      line-height: 1.5;
-      font-weight: 200;
-      color: #fff;
-      font-family: "Open Sans", sans-serif;
-      margin-bottom: 2em; }
-      @media screen and (min-width: 530px) {
-        #about-section #about-content h3 {
-          width: 23.4375em;
-          margin: 0 auto; } }
-    #about-section #about-content #about-btn {
-      padding: 0.75em 3em; }
-  #about-section #about-transition {
-    width: 6.25em;
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    top: 12.5em; }
-    @media screen and (min-width: 504px) {
-      #about-section #about-transition {
-        top: 16.8em; } }
-    @media screen and (min-width: 400px) and (max-width: 504px) {
-      #about-section #about-transition {
-        top: 14.35em; } }
-
 /*----------------------FOOTER SECTION-------------------*/
 footer {
   height: 9.375em;
@@ -830,6 +789,18 @@ footer {
           left: 0.4em; } }
 
 /*---------------------PORTFOLIO SECTION--------------------*/
+#portfolio-section ul {
+  width: 21em;
+  margin: 0 auto; }
+  #portfolio-section ul li {
+    margin-right: 1em;
+    font-weight: light;
+    font-famly: "Open Sans", sans-serif; }
+
+#portfolio-section .filter-option {
+  color: #777;
+  cursor: pointer; }
+
 .portfolio-box {
   width: 100%;
   display: -webkit-flex;
@@ -946,3 +917,39 @@ footer {
       border-bottom: none; }
     #blog-section .blog-container article:first-child {
       padding-top: 0; }
+
+#contact-section {
+  padding: 4em 0;
+  height: 100%; }
+  #contact-section form {
+    width: 100%; }
+    @media screen and (min-width: 550px) {
+      #contact-section form {
+        width: 34.375em;
+        margin: 0 auto; } }
+    #contact-section form ul li {
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 1em; }
+      #contact-section form ul li label {
+        display: block;
+        margin-bottom: 0.25em;
+        font-weight: 200; }
+      #contact-section form ul li h2 {
+        font-weight: 200; }
+      #contact-section form ul li input {
+        width: 90%;
+        font-size: 1.125em;
+        padding: 0.5em;
+        border-radius: 3px;
+        border: 1px solid #333; }
+      #contact-section form ul li textarea {
+        width: 90%;
+        padding: 0.5em;
+        border: 1px solid #333; }
+      #contact-section form ul li input[type="submit"] {
+        background-color: #50E3C2;
+        color: #fff;
+        border: none;
+        padding: 0.75em 0; }

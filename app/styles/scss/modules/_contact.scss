@@ -1,0 +1,53 @@
+#contact-section {
+    padding: 4em 0;
+    height: 100%;
+
+    form {
+        width: 100%;
+        @media screen and (min-width: 550px) {
+            width: em(550px);
+            margin: 0 auto;
+        }
+
+        ul {
+
+            li {
+                display: block;
+                width: 90%;
+                margin: 0 auto;
+                margin-bottom: 1em;
+
+                label {
+                    display: block;
+                    margin-bottom: 0.25em;
+                    font-weight: 200;
+                }
+
+                h2 {
+                    font-weight: 200;
+                }
+
+                input {
+                    width: 90%;
+                    font-size: em(18px);
+                    padding: 0.5em;
+                    border-radius: 3px;
+                    border: 1px solid #333;
+                }
+
+                textarea {
+                    width: 90%;
+                    padding: 0.5em;
+                    border: 1px solid #333;
+                }
+
+                input[type="submit"] {
+                    background-color: $lightgreen;
+                    color: #fff;
+                    border: none;
+                    padding: 0.75em 0;
+                }
+            }
+        }
+    }
+}

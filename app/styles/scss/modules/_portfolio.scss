@@ -133,6 +133,23 @@
 
 /*---------------------PORTFOLIO SECTION--------------------*/
 
+#portfolio-section {
+  ul {
+    width: 21em;
+    margin: 0 auto;
+    li {
+      margin-right: 1em;
+      font-weight: light;
+      font-famly: $sans;
+    }
+  }
+
+  .filter-option {
+    color: #777;
+    cursor: pointer;
+  }
+}
+
 .portfolio-box {
   width: 100%;
   display: -webkit-flex;
