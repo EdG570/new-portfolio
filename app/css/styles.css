@@ -406,7 +406,7 @@ a {
 /* ----- HEADER SECTION -----*/
 #header-section {
   /*background: linear-gradient(to top, $gradient, $gradient), url('../img/skydive.jpg');  */
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/skydive-texture.jpg");
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/skydive-texture.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: cover;
@@ -937,19 +937,39 @@ footer {
         margin-bottom: 0.25em;
         font-weight: 200; }
       #contact-section form ul li h2 {
-        font-weight: 200; }
+        font-weight: 200;
+        font-size: 2em; }
       #contact-section form ul li input {
         width: 90%;
         font-size: 1.125em;
         padding: 0.5em;
         border-radius: 3px;
-        border: 1px solid #333; }
+        border: 1px solid #777; }
       #contact-section form ul li textarea {
         width: 90%;
         padding: 0.5em;
-        border: 1px solid #333; }
+        border: 1px solid #777; }
       #contact-section form ul li input[type="submit"] {
         background-color: #50E3C2;
         color: #fff;
         border: none;
         padding: 0.75em 0; }
+
+#thanks {
+  padding: 3em 0;
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+  #thanks #thanks-content {
+    width: 100%; }
+    #thanks #thanks-content h1 {
+      color: #229077; }
+    #thanks #thanks-content img {
+      width: 10em;
+      margin-bottom: 2em; }
+    #thanks #thanks-content h3 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.5em;
+      font-weight: 200; }
+    #thanks #thanks-content p {
+      font-weight: 200; }

@@ -9,6 +9,7 @@ var imagemin = require('gulp-imagemin');
 var del = require('del');
 var runSequence = require('run-sequence');
 var htmlmin = require('gulp-htmlmin');
+var gzip = require('gulp-gzip');
  
 gulp.task('minifyHTML', function() {
   return gulp.src('build/*.html')

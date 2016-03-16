@@ -12,6 +12,13 @@
 
         <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>  
+
+         <!--build:js js/main.js -->
+        <script defer src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script defer src="bower_components/velocity/velocity.min.js"></script>
+        <script defer src="bower_components/animatescroll/animatescroll.js"></script>
+        <script defer src="js/main.js"></script>
+        <!-- endbuild -->
     </head>
     <body>
         <section class="port-nav-section">
@@ -46,7 +53,7 @@
         </section>
         <section id="contact-section">
             
-            <form action="./send_form_email.php" method="POST">
+            <form action="//formspree.io/cole570@hotmail.com" method="POST">
                 <ul>
                     <li><h2>Send me an email</h2></li>
                     <li>
@@ -65,8 +72,8 @@
                         <input type="submit" name="submit">
                     </li>
                 </ul>    
-               
-               
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <input type="hidden" name="_next" value="//edglazenski.com/thanks.html" />   
             </form> 
         </section>
         <footer>
@@ -78,13 +85,5 @@
             <p>© 2016 Ed Glazenski - All Rights Reserved</p>
         </footer>
     
-
-    <!--build:js js/main.js -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/velocity/velocity.min.js"></script>
-    <script src="bower_components/animatescroll/animatescroll.js"></script>
-    <script src="js/main.js"></script>
-    <!-- endbuild -->
-    <script></script>
     </body>
 </html>

@@ -25,6 +25,7 @@
 
                 h2 {
                     font-weight: 200;
+                    font-size: 2em;
                 }
 
                 input {
@@ -32,13 +33,13 @@
                     font-size: em(18px);
                     padding: 0.5em;
                     border-radius: 3px;
-                    border: 1px solid #333;
+                    border: 1px solid #777;
                 }
 
                 textarea {
                     width: 90%;
                     padding: 0.5em;
-                    border: 1px solid #333;
+                    border: 1px solid #777;
                 }
 
                 input[type="submit"] {

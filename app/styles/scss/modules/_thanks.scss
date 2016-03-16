@@ -1,0 +1,29 @@
+#thanks {
+  padding: 3em 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  
+  #thanks-content {
+    width: 100%;
+
+    h1 {
+      color: $darkgreen;
+    }
+
+    img {
+      width: 10em;
+      margin-bottom: 2em;
+    }
+
+    h3 {
+      font-family: $sans;
+      font-size: 1.5em;
+      font-weight: 200;
+    }
+
+    p {
+      font-weight: 200;
+    }
+  }
+}
