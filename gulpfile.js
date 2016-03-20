@@ -22,6 +22,11 @@ gulp.task('copy-html', function(){
       .pipe(gulp.dest('build'))
 });
 
+gulp.task('copy-assets', function(){
+  gulp.src('app/assets/resume.pdf')
+      .pipe(gulp.dest('build/assets'))
+});
+
 gulp.task('sass', function() {
   return gulp.src('app/styles/scss/**/*.scss')
     .pipe(sass())
@@ -67,7 +72,7 @@ gulp.task('clean:build', function() {
 
 gulp.task('build', function(callback) {
   runSequence('clean:build', 
-    ['sass', 'useref', 'images', 'copy-html'],
+    ['sass', 'useref', 'images', 'copy-html', 'copy-assets'],
     ['minifyHTML']),
     callback
 });

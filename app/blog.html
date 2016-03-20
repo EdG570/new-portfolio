@@ -32,11 +32,11 @@
                             <li><a href="about.html">About</a></li>
                             <li><a href="blog.html">Blog</a></li>
                             <li><a href="resume.pdf">Resume</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
                     <div class="logo-box">
-                        <img class="port-logo" src="img/portfolio-logo.svg" alt="logo">
+                        <a href="index.html"><img class="port-logo" src="img/portfolio-logo.svg" alt="logo"></a>
                         <h2>Ed Glazenski</h2>
                     </div>
 
@@ -44,9 +44,8 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="resume.pdf">Resume</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -54,32 +53,28 @@
         <section id="blog-section">
             <div class="blog-container">
                 <article>
-                    <h1>The Misconceptions of this</h1>
-                    <p class="date">by Ed Glazenski on March 10, 2016</p>
-                    <img src="img/blogImgs/blog.jpg" alt="">
-                    <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit doloremque nemo aut, rerum at libero. Possimus amet perspiciatis esse id, veniam temporibus, corporis accusamus, ea beatae explicabo dolores magni. Consectetur.</p>
-                    <p class="hidden-content select">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non officiis itaque repudiandae et laboriosam assumenda, nam cum consequuntur deserunt iure, laudantium sit doloribus deleniti sequi a, debitis minus sint odit.
-                    <p class="hidden-content select">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, iusto delectus eius pariatur dolore voluptatum dolor quam ipsum atque, tenetur, repellat voluptatem, quis qui assumenda unde amet eveniet. Nam, beatae!</p>
+                    <h1>The DOM Series: The DOM Tree</h1>
+                    <p class="date">by Ed Glazenski on March 19, 2016</p>
+                    <img src="img/blogImgs/dom-tree-header.jpg" alt="tree image">
+                    <p class="blog-content">When browsers create a model of an html document, they create a DOM tree. The DOM tree is stored into memory and it consists of four types of nodes: A document node, element nodes, attribute nodes, and text nodes. An illustration of a very basic DOM tree is shown below:</p>
+                    <img class="hidden-content select" src="img/blogImgs/dom-tree.jpg" alt="dom tree image">
+                    <p class="hidden-content select">The document node is the gatekeeper of the document object. In order to access any of the nodes below the document node, you must start at the document node.</p>
+                    <p class="hidden-content select">The teal colored nodes represent element nodes. In order to gain access to attribute and text nodes you must first select the desired element node.</p>
+                    <p class="hidden-content select">Attribute nodes are not children of element nodes. They are part of their respective element node. Once you gain access to an element node, built-in javascript methods are provided to manipulate the attribute nodes within an element node.</p>
+                    <p class="hidden-content select">Once you select an element node you have access to any text nodes that are contained within that element. Text nodes branch off of element nodes as their own nodes but they cannot have any children nodes branch off of them. When you have a text node this is the end of the line in regards to branching further off that node.</p>
+                    <p class="hidden-content select">Every node is an object with methods and properties. These methods and properties allow you to target specific nodes or return NodeLists, which are collections of nodes. This makes for some pretty powerful possibilities.</p> 
+                    <p class="hidden-content select">In the next part for this series I will talk about different methods we can use to target specific elements and manipulate those elements along with attribute and text nodes. Thanks for visiting and have a great day!</p>
                     <a class="display btn" href="">Read more</a>
                     <a class="back btn" href="">Back</a>
                 </article>
-                <article>
-                    <h1>The Misconceptions of this</h1>
-                    <p class="date">by Ed Glazenski on March 10, 2016</p>
-                    <img src="img/blogImgs/blog.jpg" alt="">
-                    <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit doloremque nemo aut, rerum at libero. Possimus amet perspiciatis esse id, veniam temporibus, corporis accusamus, ea beatae explicabo dolores magni. Consectetur.</p>
-                    <p class="hidden-content select">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non officiis itaque repudiandae et laboriosam assumenda, nam cum consequuntur deserunt iure, laudantium sit doloribus deleniti sequi a, debitis minus sint odit.
-                    <p class="hidden-content select">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, iusto delectus eius pariatur dolore voluptatum dolor quam ipsum atque, tenetur, repellat voluptatem, quis qui assumenda unde amet eveniet. Nam, beatae!</p>
-                    <a class="display btn" href="">Read more</a>
-                    <a class="back btn" href="">Back</a>
-                </article>
+               
             </div>  
         </section>
         <footer>
             <ul>
-                <li><img src="img/github.svg" alt="github icon"></li>
-                <li><img src="img/linkedin.svg" alt="linkedin icon"></li>
-                <li><img src="img/twitter.svg" alt="twitter icon"></li>
+                <li><a href="https://github.com/EdG570" target="_blank"><img src="img/github.svg" alt="github icon"></a></li>
+                <li><a href="https://www.linkedin.com/in/ed-glazenski-44a818107" target="_blank"><img src="img/linkedin.svg" alt="linkedin icon"></a></li>
+                <li><a href="https://twitter.com/Ed_Glazenski" target="_blank"><img src="img/twitter.svg" alt="twitter icon"></a></li>
             </ul>
             <p>© 2016 Ed Glazenski - All Rights Reserved</p>
         </footer>

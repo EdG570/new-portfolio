@@ -901,8 +901,9 @@ footer {
       #blog-section .blog-container article img {
         margin-top: 1em; }
       #blog-section .blog-container article p {
-        line-height: 1.8;
-        font-weight: 200; }
+        line-height: 2;
+        font-weight: 300;
+        font-size: 18px; }
       #blog-section .blog-container article .blog-content {
         margin-top: 2em; }
       #blog-section .blog-container article .hidden-content {
