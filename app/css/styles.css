@@ -874,6 +874,12 @@ footer {
   #about-page-section .about-content p {
     font-weight: 200;
     line-height: 1.5em; }
+  #about-page-section #about-do {
+    position: relative;
+    left: -700px; }
+  #about-page-section #about-am {
+    position: relative;
+    left: 700px; }
 
 #blog-section {
   padding: 3em 0; }
@@ -945,11 +951,13 @@ footer {
         font-size: 1.125em;
         padding: 0.5em;
         border-radius: 3px;
-        border: 1px solid #777; }
+        border: 1px solid #777;
+        font-weight: 200; }
       #contact-section form ul li textarea {
         width: 90%;
         padding: 0.5em;
-        border: 1px solid #777; }
+        border: 1px solid #777;
+        font-weight: 200; }
       #contact-section form ul li input[type="submit"] {
         background-color: #50E3C2;
         color: #fff;

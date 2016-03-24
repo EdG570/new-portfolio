@@ -1,5 +1,21 @@
 $(document).ready(function() {
 
+  $(".animsition").animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    linkElement: '.animsition-link',
+    inDuration: 1500,
+    outDuration: 500,
+  });
+
+  $("#about-do").velocity({
+    left: '+=700',
+  }, 1500);
+
+  $("#about-am").velocity({
+    left: '-=700',
+  }, 1500);
+
   $('.hamburger').on('click', function(event) {
     $('nav').toggleClass('nav-open');
   });
